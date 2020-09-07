@@ -24,11 +24,11 @@
         \textbf{Carlos Alfredo Pinto Hernández}
             
         \vfill
-            
+        
         \vspace{0.8cm}
             
         \Large
-        Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
+        Departamento de Ingeniería Electrónica y Telecomunicaciones\\
         Universidad de Antioquia\\
         Medellín\\
         Septiembre de 2020
@@ -77,15 +77,24 @@ Es una parte del disco duro designada exclusivamente para soportar partes de pro
 \subsubsection{Memoria Externa}
 Esta clasificación corresponde a dispositivos de almacenamiento secundario y también se pueden considerar sistemas de almacenamiento en red. Los dispositivos que forman la memoria externa se conectan al computador con algún tipo de bus (serie o paralelo). Estos dispositivos se pueden encontrar físicamente dentro del computador conectados por buses internos del computador (IDE, SATA, SCSI, etc.) o pueden estar fuera del computador conectados por buses externos (USB, Firewire, eSATA, Infiniband, etc.).\cite{Estructura}
 
-
-
 \subsection{Gestión de memoria}
+La correcta gestión de memoria es muy importante debido a que la correcta utilización de esta permitirá realizar todas las tareas asignadas de manera eficiente en el computador. Existen múltiples técnicas de gestión de memoria, a continuación se describen de manera resumida las principales, incluyendo las primeras técnicas definidas.\cite{Gestion}
+
+\subsubsection{Sistemas Primitivos}
+Es el almacenmiento más simple en cuando a soporte hardware y necesidades de gestión. El \underline{monitor residente} consistía en cargar un único programa en memoria. La otra forma era la denominada \underline{particiones} que permitía gestionar varios programas asignado un espacio contiguo a cada uno. Se puede hacer la particiones de dos formas de tipo fijo o variable.
+
+\subsubsection{Swapping}
+Es el mecanismo para mover programas entre la memoria principal al disco duro, de esta forma los programas pueden entrar/salir de la memoria durante el tiempo de ejecución. Las principales ventajas de esta técnia es que permite influir en la gestión de procesos para controlar el grado de multiprogramación y proporciona flexibilidad en la gestión de la memoria, permitiendo una utilización más eficiente del espacio.
+
+\subsubsection{Paginación y segmentación}
+Esta técnia permite la ubicación no contigua de programas con el fin de combatir la fragmentación y la degradación de la memoria. Al poder ubicarse de forma no contigua, un programa ya no necesita un espacio de su tamaño, sino que la cantidad total de memoria libre sea mayor o igual.
+
+\subsubsection{Enlace Dinámico}
+Hace referencia a la técnica en la cual se divide el programa en varios módulos a partir de su estructura y cargar de forma dinámica solo aquellos que se necesiten.
+\subsubsection{Memoria Virtual}
+Es el mecanismo más general para la ejecución de programas no enteros en memoria. Se basa en un sistema de paginación (o combinado) en el que sólo un subconjunto de las páginas del programa están cargadas en memoria y el resto reside en un dispositivo de almacenamiento secundario.
 
 \subsection{Velocidad de memoria}
-
-
-
-
 
 
 \section{Conclusiones} \label{conclusion}
